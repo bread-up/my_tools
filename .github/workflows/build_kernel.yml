@@ -25,10 +25,10 @@ jobs:
        - name: Upload to Release
          uses: softprops/action-gh-release@v1
          with:
-           files: kernel/neternelQ-m10.zip
-           name: kernel
+           files: /home/runner/worker/kernel/*.zip        
+           name: neternel for M10
            tag_name: ${{ github.run_id }}
            body: |
-             kernel for j6lte
+             neternel kernel
          env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
