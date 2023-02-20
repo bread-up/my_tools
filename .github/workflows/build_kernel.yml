@@ -27,9 +27,7 @@ jobs:
          with:
            files: /home/runner/kernel/neternelQ-m10.zip        
            name: neternel for M10         
-           tag_name: ${{ github.run_id }}
-           permissions:
-             contents: write
+           tag_name: ${{ github.run_id }}       
            body: |
              neternel kernel
          env:
