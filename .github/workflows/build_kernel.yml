@@ -24,11 +24,11 @@ jobs:
 
        - name: Upload to Release
          uses: softprops/action-gh-release@v1
+         permissions:
+           contents: write
          with:
            files: /home/runner/kernel/neternelQ-m10.zip        
-           name: neternel for M10
-           permissions:
-             contents: write
+           name: neternel for M10         
            tag_name: ${{ github.run_id }}
            body: |
              neternel kernel
