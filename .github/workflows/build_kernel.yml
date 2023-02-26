@@ -9,7 +9,7 @@ env:
   
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
 
     steps:
        - name: Checkout
@@ -29,6 +29,6 @@ jobs:
            name: neternel for M10         
            tag_name: ${{ github.run_id }}       
            body: |
-             neternel kernel
+             nethunter kernel
          env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
